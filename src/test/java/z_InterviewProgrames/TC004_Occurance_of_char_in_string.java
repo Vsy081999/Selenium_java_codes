@@ -9,7 +9,7 @@ public class TC004_Occurance_of_char_in_string {
 		String str = "aaaabbbbccccccaaaa";
 		char[] arr = str.toCharArray();
 //		String arr[] = str.split(" ");
-
+		
 		HashMap<Character, Integer> hm = new HashMap<Character, Integer>();
 //		HashMap<String, Integer> hm = new HashMap<String, Integer>();
 		
@@ -20,9 +20,12 @@ public class TC004_Occurance_of_char_in_string {
 			} else {
 				hm.put(c, 1);
 			}
+		
 		}
+		
 		for (Map.Entry entry : hm.entrySet()) {
 			System.out.println(entry.getKey() + " " + entry.getValue());
 		}
+	
 	}
 }
